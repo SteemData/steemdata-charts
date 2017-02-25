@@ -17,5 +17,5 @@ RUN pip install --upgrade --force-reinstall git+git://github.com/xeroc/python-gr
 # use local node
 RUN piston set node ws://88.99.98.236:8090
 
-
-CMD ["runipy", "Charts.ipynb"]
+# CMD ["runipy", "Charts.ipynb"]
+CMD ["python", "__main__.py"]
