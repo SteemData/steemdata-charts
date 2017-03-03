@@ -1,4 +1,4 @@
-FROM python:3.6.0
+FROM python:3.5.3
 MAINTAINER furion <_@furion.me>
 
 COPY .plotly/.credentials /root/.plotly/
@@ -17,5 +17,8 @@ RUN pip install --upgrade --force-reinstall git+git://github.com/xeroc/python-gr
 # use local node
 RUN piston set node ws://88.99.98.236:8090
 
+RUN chmod +x run.sh
+
 # CMD ["runipy", "Charts.ipynb"]
-CMD ["python", "__main__.py"]
+#CMD ["python", "__main__.py"]
+ENTRYPOINT ./run.sh
