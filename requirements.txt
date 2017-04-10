@@ -4,7 +4,6 @@ numpy
 plotly
 cufflinks
 jupyter
-steem
 funcy
 statsmodels
 git+https://github.com/paulgb/runipy.git
