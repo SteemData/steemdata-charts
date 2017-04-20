@@ -13,5 +13,5 @@ RUN pip install -r requirements.txt
 RUN chmod +x run.sh
 
 # CMD ["runipy", "Charts.ipynb"]
-#CMD ["python", "__main__.py"]
-ENTRYPOINT ./run.sh
+CMD ["python", "charts.py"]
+#ENTRYPOINT ./run.sh
