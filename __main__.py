@@ -20,7 +20,7 @@ def run():
         with timeit():
             run_notebook()
         print('Done.')
-        time.sleep(3600 * 12)
+        time.sleep(3600 * 16)
 
 
 if __name__ == '__main__':

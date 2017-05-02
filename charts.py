@@ -194,13 +194,13 @@ while True:
     )
 
     df_affiliate = df.groupby('creator').count().sort_values('date', ascending=False)
-    df_affiliate.ix[:5].iplot(
-        kind='bar',
-        theme='white',
-        colors=['blue'],
-        title='Top Account Creators for past 90 days',
-        filename='steemdata-account-creation-faucet',
-    )
+    # df_affiliate.ix[:5].iplot(
+    #     kind='bar',
+    #     theme='white',
+    #     colors=['blue'],
+    #     title='Top Account Creators for past 90 days',
+    #     filename='steemdata-account-creation-faucet',
+    # )
 
     # time constraints
     time_constraints = {
@@ -480,4 +480,4 @@ while True:
     # todo, make bar charts share X axis
 
     print('End, sleeping...')
-    time.sleep(3600*12)
+    time.sleep(3600*16)
