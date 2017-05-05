@@ -1,15 +1,14 @@
 import datetime as dt
+import time
 
+import cufflinks as cf
+import pandas as pd
+import plotly.graph_objs as go
+import plotly.plotly as py
+from steem.converter import Converter
 from steemdata import SteemData
 
 db = SteemData().db
-
-import pandas as pd
-
-import plotly.plotly as py
-import plotly.graph_objs as go
-import cufflinks as cf
-import time
 
 # go back online to update charts on website
 cf.go_online()
@@ -390,7 +389,6 @@ while True:
     }
     data = list(db['Accounts'].find(conditions, projection=projection))
 
-    from steem.converter import Converter
     withdrawing_accounts = [{
         'name': x['name'],
         'sp': Converter().vests_to_sp(x['vesting_withdraw_rate']['amount']),
