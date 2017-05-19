@@ -11,6 +11,7 @@ ENV UNLOCK foo
 RUN pip install -r requirements.txt
 
 RUN jupyter nbconvert --to script Charts.ipynb
+RUN jupyter nbconvert --to script MarketCap.ipynb
 
 RUN chmod +x run.sh
 CMD "./run.sh"
