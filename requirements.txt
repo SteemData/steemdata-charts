@@ -6,4 +6,3 @@ cufflinks
 jupyter
 funcy
 statsmodels
-git+https://github.com/paulgb/runipy.git

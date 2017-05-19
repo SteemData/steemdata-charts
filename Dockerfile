@@ -10,8 +10,7 @@ ENV UNLOCK foo
 
 RUN pip install -r requirements.txt
 
-RUN chmod +x run.sh
+RUN jupyter nbconvert --to script Charts.ipynb
 
-# CMD ["runipy", "Charts.ipynb"]
-CMD ["python", "charts.py"]
-#ENTRYPOINT ./run.sh
+RUN chmod +x run.sh
+CMD "./run.sh"

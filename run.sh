@@ -1,3 +1,6 @@
 #!/bin/sh
-
-python __main__.py
+while [ true ]
+do
+    python Charts.py
+    sleep 40000
+done
