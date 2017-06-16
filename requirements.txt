@@ -1,8 +1,7 @@
-steemdata
-pandas
 numpy
+pandas
 plotly
-cufflinks
 jupyter
 funcy
 statsmodels
+steemdata
