@@ -9,6 +9,7 @@ MAINTAINER furion <_@furion.me>
 #RUN ./configure
 #RUN make
 #RUN make install
+#ENV LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
 COPY .plotly/.credentials /root/.plotly/
 
