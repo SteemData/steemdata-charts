@@ -4,4 +4,3 @@ plotly
 jupyter
 funcy
 statsmodels
-steemdata

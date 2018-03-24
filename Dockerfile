@@ -1,4 +1,4 @@
-FROM python:3.6.2
+FROM python:3.6
 MAINTAINER furion <_@furion.me>
 
 # install talib
@@ -19,8 +19,8 @@ WORKDIR /project_root
 ENV UNLOCK foo
 
 RUN pip install -r requirements.txt
-RUN pip install --upgrade --no-deps --force-reinstall  git+git://github.com/Netherdrake/steem-python@master
-RUN steempy set nodes http://136.243.77.24:8090
+RUN pip install git+git://github.com/Netherdrake/steem-python@master
+RUN pip install git+git://github.com/SteemData/steemdata@master
 
 #RUN pip install TA-lib
 
